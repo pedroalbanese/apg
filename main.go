@@ -13,9 +13,8 @@ const (
 	lowerChars     = "abcdefghijklmnopqrstuvwxyz"
 	upperChars     = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	numericChars   = "0123456789"
-	specialChars   = "!@#$%^&*()-_=+[]{}|;:'\",.<>/?"
+	specialChars   = "!@#$%&*()-_=+[]{}|;:,.<>/?"
 	ambiguousChars = "l1IO0"
-	excludedChars  = "\\|^"
 )
 
 var (
@@ -63,9 +62,6 @@ func main() {
 	if useSpecial {
 		characters += specialChars
 	}
-
-	// Remove excluded characters
-	characters = removeCharacters(characters, excludedChars)
 
 	if avoidAmbiguous {
 		// Remove ambiguous characters only once if avoidAmbiguous is set
