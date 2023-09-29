@@ -14,6 +14,8 @@ Usage of apg:
         Password length (default 12)
   -n int
         Number of passwords to generate (default 6)
+  -spell
+        Spell passwords using phonetic alphabet
 ```
 This project is licensed under the ISC License.
 ##### Copyright (c) 2016-2023 Pedro F. Albanese - ALBANESE Research Lab.
