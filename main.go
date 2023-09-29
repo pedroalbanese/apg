@@ -13,7 +13,7 @@ const (
 	lowerChars     = "abcdefghijklmnopqrstuvwxyz"
 	upperChars     = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	numericChars   = "0123456789"
-	specialChars   = "!@#$%&*()-_=+[]{}|;:,.<>/?"
+	specialChars   = "!@#$%&*()-_=+[]{};:,.<>/?"
 	ambiguousChars = "l1IO0"
 )
 
