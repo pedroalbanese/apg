@@ -14,6 +14,8 @@ Usage of apg:
         Password length (default 12)
   -n int
         Number of passwords to generate (default 6)
+  -seed string
+        Specify a seed for random number generation
   -spell
         Spell passwords using phonetic alphabet
 ```
