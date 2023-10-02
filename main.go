@@ -24,6 +24,7 @@ var (
 	useSpecial     bool
 	avoidAmbiguous bool
 	spell          bool
+	seed           string
 )
 
 func main() {
@@ -40,6 +41,7 @@ func main() {
 	flag.BoolVar(&useSpecial, "S", false, "Use special characters")
 	flag.BoolVar(&avoidAmbiguous, "H", false, "Avoid ambiguous characters")
 	flag.BoolVar(&spell, "spell", false, "Spell passwords using phonetic alphabet")
+	flag.StringVar(&seed, "seed", "", "Specify a seed for random number generation")
 	flag.Parse()
 
 	if !(useLower || useUpper || useNumeric || useSpecial) {
@@ -47,7 +49,12 @@ func main() {
 		return
 	}
 
-	rand.Seed(time.Now().UnixNano())
+	if seed != "" {
+		seedInt := stringToSeed(seed)
+		rand.Seed(seedInt)
+	} else {
+		rand.Seed(time.Now().UnixNano())
+	}
 
 	characters := ""
 	if useLower {
@@ -76,6 +83,14 @@ func main() {
 		}
 		fmt.Println(password)
 	}
+}
+
+func stringToSeed(s string) int64 {
+	var seed int64
+	for _, char := range s {
+		seed += int64(char)
+	}
+	return seed
 }
 
 func generatePassword(length int, charset string) string {
