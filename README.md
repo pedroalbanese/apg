@@ -1,4 +1,4 @@
-# apg
+# apg(2)
 ### Automated Password Generator 
 Automated Password Generator (APG) is a Linux program that helps webmasters and server administrators with creating random, secure passwords, through the SSH of server's. A wide range of Linux distros use APG in their repository. 
 
