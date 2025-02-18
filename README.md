@@ -27,12 +27,12 @@ Usage of apg:
         Spell passwords using phonetic alphabet
 ```
 
-## Syntax:
+### Syntax:
 ```
 ./apg -L -N -U -spell
 ``` 
 
-## Output:
+### Output:
 ```
 vwItH3bGEEFZ victor-whiskey-India-tango-Hotel-THREE-bravo-Golf-Echo-Echo-Foxtrot-Zulu
 xOGfGFkHL20e x-ray-Oscar-Golf-foxtrot-Golf-Foxtrot-kilo-Hotel-Lima-TWO-ZERO-echo
