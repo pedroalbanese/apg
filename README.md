@@ -26,5 +26,21 @@ Usage of apg:
   -spell
         Spell passwords using phonetic alphabet
 ```
+
+## Syntax:
+```
+./apg -L -N -U -spell
+``` 
+
+## Output:
+```
+vwItH3bGEEFZ victor-whiskey-India-tango-Hotel-THREE-bravo-Golf-Echo-Echo-Foxtrot-Zulu
+xOGfGFkHL20e x-ray-Oscar-Golf-foxtrot-Golf-Foxtrot-kilo-Hotel-Lima-TWO-ZERO-echo
+e5KLYOK6mA1m echo-FIVE-Kilo-Lima-Yankee-Oscar-Kilo-SIX-mike-Alpha-ONE-mike
+DLBAm5HgPofk Delta-Lima-Bravo-Alpha-mike-FIVE-Hotel-golf-Papa-oscar-foxtrot-kilo
+738e3h7k2ZQ3 SEVEN-THREE-EIGHT-echo-THREE-hotel-SEVEN-kilo-TWO-Zulu-Quebec-THREE
+aQ2TdulqJ780 alfa-Quebec-TWO-Tango-delta-uniform-lima-quebec-Juliett-SEVEN-EIGHT-ZERO
+```
+
 This project is licensed under the ISC License.
 ##### Copyright (c) 2016-2023 Pedro F. Albanese - ALBANESE Research Lab.
